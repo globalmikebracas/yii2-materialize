@@ -63,10 +63,10 @@
         <div class="row">
             <hr>
             <div class="col l6 s12">
-                <p class="flow-text">Current release: <strong>2.0.0</strong></p>
+                <p class="flow-text">Current release: <strong>3.0.0</strong></p>
             </div>
             <div class="col l6 s12">
-                <p class="flow-text">Current Materialize version implemented: <strong>0.100.1</strong></p>
+                <p class="flow-text">Current Materialize version implemented: <strong>1.0.0</strong></p>
             </div>
             <hr>
         </div>
@@ -177,7 +177,7 @@
             <div class="prism z-depth-1">
                 <pre>
                     <code class="language-bash" id="composer-fxp">
-                        $ composer global require "fxp/composer-asset-plugin:~1.2"
+                        $ composer global require "fxp/composer-asset-plugin:~1.4"
                     </code>
                 </pre>
             </div>
@@ -206,8 +206,7 @@
             <h2>Load Materialize</h2>
             <p class="flow-text">
                 To load the Materialize CSS files integrate the <span class="">MaterializeAsset.php</span> into your
-                app.
-                One way to achieve this is to register the asset in the main layout:
+                app. One way to achieve this is to register the asset in the main layout:
             </p>
 
             <div class="prism z-depth-1">
@@ -252,37 +251,36 @@
 
             <p class="flow-text">
                 <a href="http://yii2-materializecss.pluspunkt-coding.de/" title="See the magic happen" target="_blank" rel="noopener">Visit our official demo page</a> to see the
-                widgets in action and learn how to use them.
+                widgets in action and learn how to use them (needs adaption for v3).
             </p>
 
             <h2>Currently available</h2>
-
             <div class="row">
                 <div class="col l4 m4 s12">
                     <ul class="collection">
                         <li class="collection-item">ActiveField</li>
                         <li class="collection-item">ActiveForm</li>
                         <li class="collection-item">Alert</li>
-                        <li class="collection-item">Breadcrumbs<span class="badge updated">2.0.0</span></li>
+                        <li class="collection-item">Breadcrumbs</li>
                         <li class="collection-item">Button</li>
                         <li class="collection-item">Carousel</li>
-                        <li class="collection-item">Chip</li>
-                        <li class="collection-item">Collapsible<span class="badge since">2.0.0</span></li>
+                        <li class="collection-item">ChipInput<span class="badge new">3.0.0</span></li>
+                        <li class="collection-item">Collapsible</li>
                         <li class="collection-item">DatePicker</li>
                         <li class="collection-item">DetailView</li>
                     </ul>
                 </div>
                 <div class="col l4 m4 s12">
                     <ul class="collection">
-                        <li class="collection-item">Dropdown<span class="badge updated">2.0.0</span></li>
-                        <li class="collection-item">Fixed Action Button<span class="badge updated">2.0.0</span></li>
+                        <li class="collection-item">Dropdown</li>
+                        <li class="collection-item">FloatingActionButton<span class="badge new">3.0.0</span></li>
                         <li class="collection-item">GridView with ActionColumn</li>
                         <li class="collection-item">Icon</li>
                         <li class="collection-item">LinkPager</li>
                         <li class="collection-item">MaterialBox</li>
                         <li class="collection-item">Modal</li>
-                        <li class="collection-item">Nav<span class="badge updated">2.0.0</span></li>
-                        <li class="collection-item">NavBar<span class="badge updated">2.0.0</span></li>
+                        <li class="collection-item">Nav</li>
+                        <li class="collection-item">NavBar</li>
                         <li class="collection-item">Parallax</li>
                     </ul>
                 </div>
@@ -291,12 +289,13 @@
                         <li class="collection-item">Progress</li>
                         <li class="collection-item">RangeInput</li>
                         <li class="collection-item">Select</li>
-                        <li class="collection-item">SideNav<span class="badge updated">2.0.0</span></li>
+                        <li class="collection-item">SideNav</li>
                         <li class="collection-item">Slider</li>
                         <li class="collection-item">Spinner</li>
+                        <li class="collection-item">StaticChip<span class="badge new">3.0.0</span></li>
                         <li class="collection-item">SubmitButton</li>
                         <li class="collection-item">SwitchButton</li>
-                        <li class="collection-item">TimePicker<span class="badge updated">2.0.0</span></li>
+                        <li class="collection-item">TimePicker</li>
                     </ul>
                 </div>
             </div>
@@ -344,23 +343,7 @@
             <h1>Known issues</h1>
 
             <p class="flow-text">
-                Despite the styling issues in the side navigation overlay the dependency has been updated to v0.100.1.
-                <br>
-                See <a href="https://github.com/Dogfalo/materialize/issues/4046">Issue #4046</a> for details.
-                <br><br>
-                Unfortunately the issue still exists in the latest release, but can be fixed temporarily with the following CSS styles:
-            </p>
-            <div class="prism z-depth-1">
-                <pre>
-                    <code class="language-css" id="sidenav-css-fix">
-                        #sidenav-overlay {
-                            z-index: 996;
-                        }
-                    </code>
-                </pre>
-            </div>
-            <p class="flow-text">
-                Hopefully one of the upcoming releases of Materialize will fix the issue.
+                Systems operating on normal parameters :)
             </p>
         </section>
 
@@ -368,7 +351,7 @@
             <h1>Sample layout</h1>
 
             <p class="flow-text">
-                As of version 1.0.6 there is a sample layout file included in the package. You can use this
+                There is a sample layout file included in the package. You can use this
                 file to get inspiration for your own layout or replace the respective views/layouts/main.php
                 with the file provided.
                 <br><br>
@@ -378,6 +361,13 @@
 
         <section id="changelog" data-materialize-scrollspy="true">
             <h1>Change log</h1>
+            <ul class="collection with-header">
+                <li class="collection-header"><h5>3.0.0 - 2018-11-16</h5></li>
+
+                <li class="collection-item">implement Materialize v1.0.0</li>
+                <li class="collection-item"><strong>Breaking changes included</strong></li>
+            </ul>
+
             <ul class="collection with-header">
                 <li class="collection-header"><h5>2.0.0 - 2017-07-30</h5></li>
 

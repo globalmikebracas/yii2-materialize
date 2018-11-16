@@ -1,0 +1,10 @@
+Array
+(
+    [0] => Array
+        (
+            [line] => 543
+            [file] => /var/www/yii2-materializecss-doc/yii2/vendor/macgyer/yii2-materializecss/src/lib/Html.php
+            [message] => No docblock for element 'error'
+        )
+
+)

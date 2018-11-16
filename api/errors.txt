@@ -1,0 +1,10 @@
+Array
+(
+    [0] => Array
+        (
+            [line] => 708
+            [file] => /var/www/yii2-materializecss-doc/yii2/vendor/macgyer/yii2-materializecss/src/widgets/form/ActiveField.php
+            [message] => Method error has no parent to inherit from in macgyer\yii2materializecss\widgets\form\ActiveField.
+        )
+
+)
