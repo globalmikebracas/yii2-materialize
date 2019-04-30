@@ -38,7 +38,7 @@ Or you can make use of Asset Packagist: <https://asset-packagist.org/>
 To install the package add the following to the ```require``` section of your composer.json:
 ```
 "require": {
-    "macgyer/yii2-materializecss": "~3.0.0"
+    "globalmikebracas/yii2-materializecss": "~3.0.0"
 },
 ```
 
